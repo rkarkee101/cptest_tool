@@ -1,0 +1,19 @@
+Coincident peak test, load-based benchmark (cptest 1.3)
+  method 12CP; tolerance 5%; years of load: 1
+  existing peak P = 2,850 MW (median of the years); load factor lambda = 0.614
+  the existing method counts the existing load at kappa_a = 0.862 of its peak
+  ceiling of the overcharge (the most that a flat load of any size can shift to the existing customers): 40.3%
+  safe size (passes whatever the benchmark, if it counts the existing load at no less than its average): 12.2% of the peak
+  window implied by the existing method today: 5.2% of the peak; window used: 5.2% (implied by the existing method, not below the floor)
+
+  Window grows with the system peak with exponent gamma = 1: failing size 94% of the peak (2,669 MW)
+    flat load 1,425 MW (50% of the peak): share of the existing customers under the existing method 63.3%, under the benchmark 62.0%; overcharge 2.04% -> passes
+    flat load 2,850 MW (100% of the peak): share of the existing customers under the existing method 46.3%, under the benchmark 43.9%; overcharge 5.44% -> FAILS
+      remedy 1: at least 2.4% of the pool on energy; remedy 2: 181 MW curtailable, cut in 35 hours a year for 0.1% of their energy
+    flat load 4,275 MW (150% of the peak): share of the existing customers under the existing method 36.5%, under the benchmark 33.5%; overcharge 8.84% -> FAILS
+      remedy 1: at least 17.3% of the pool on energy; remedy 2: 1,606 MW curtailable, cut in 7,812 hours a year for 32.2% of their energy
+
+  Window grows with the system peak with exponent gamma = 0.5: failing size 184% of the peak (5,242 MW)
+    flat load 1,425 MW (50% of the peak): share of the existing customers under the existing method 63.3%, under the benchmark 62.7%; overcharge 0.97% -> passes
+    flat load 2,850 MW (100% of the peak): share of the existing customers under the existing method 46.3%, under the benchmark 45.2%; overcharge 2.51% -> passes
+    flat load 4,275 MW (150% of the peak): share of the existing customers under the existing method 36.5%, under the benchmark 35.1%; overcharge 4.03% -> passes
