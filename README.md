@@ -166,9 +166,7 @@ The file can be imported. The functions that the scripts of the paper use are th
 
 The load-based benchmark rests on two premises that the paper states: the window is set from the existing method, and it grows with the system by a stated exponent. Its results are a range, not a point. The fleet-based benchmark models units with two states and independent outages. It has no derated states, no limits on energy, no storage, no imports and no network. Variable generation enters only as an hourly series that is taken off the load. The two rules for the growth of the fleet are simple brackets, and a utility should give its own planned fleet with `--units-after`. The tolerance is a judgment that belongs to the commission; the floor that the tool reports is the distance between the versions of the benchmark that it computed, not a recommendation. The test by class reads the verdict on what the new load adds and reports the gap of today beside it; a small class with unusual hours can show a large gap of today, and a class with no load in the hours that the existing method names is reported and left out of the verdict. The test divides a shared cost pool and says nothing about plant that is built for one customer.
 
-## How the tool was made and checked
 
-The tool was written with the assistance of a generative AI tool (Claude, Anthropic), as the paper states in its Acknowledgements. Every number that the paper takes from it was computed a second time by scripts that share no code with it, and its outage table reproduces the published values of the test system that the self-test lists. A user who relies on it for a filing should run the self-test and check the input files as they would for any other calculation.
 
 ## Reference
 
